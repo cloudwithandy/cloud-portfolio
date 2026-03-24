@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Portfolio Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Andy Garcia</h1>
+    <p>Aspiring Cloud Engineer | Azure | Terraform | CI/CD</p>
+</header>
+
+<main class="layout">
+
+    <!-- PROJECTS -->
+    <section class="projects-section">
+        <h2>My Projects</h2>
+        <div id="projectsContainer" class="projects-grid"></div>
+    </section>
+
+    <!-- CHAT -->
+    <section class="chat-section">
+        <h2>Ask My Cloud Portfolio Assistant</h2>
+        <p>Ask about my projects, Azure, Terraform, or cloud skills.</p>
+
+        <div class="chat-box">
+            <input
+                type="text"
+                id="questionInput"
+                placeholder="Example: What projects has Andy built?"
+            />
+            <button id="askButton">Ask</button>
+        </div>
+
+        <div id="responseBox" class="response-box">
+            Your chatbot response will appear here.
+        </div>
+    </section>
+
+</main>
+
+<script src="app.js"></script>
+
+</body>
+</html>

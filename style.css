@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background: #111827;
+  border-bottom: 1px solid #334155;
+}
+
+.hero h1 {
+  margin: 0 0 10px;
+  font-size: 2.2rem;
+}
+
+.hero p {
+  margin: 0;
+  color: #94a3b8;
+}
+
+.layout {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 24px;
+}
+
+.projects-section,
+.chat-section {
+  background: #111827;
+  border: 1px solid #334155;
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.projects-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.project-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.project-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  margin: 8px 0;
+  color: #cbd5e1;
+}
+
+.chat-box {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.chat-box input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #475569;
+  border-radius: 10px;
+  background: #0f172a;
+  color: white;
+}
+
+.chat-box button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.chat-box button:hover {
+  background: #1d4ed8;
+}
+
+.response-box {
+  margin-top: 18px;
+  min-height: 120px;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 16px;
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+  details {
+  margin-top: 14px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  padding-top: 12px;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 700;
+  list-style: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::before {
+  content: "▶ ";
+  font-size: 0.9rem;
+}
+
+details[open] summary::before {
+  content: "▼ ";
+}
+
+details ul {
+  margin-top: 12px;
+  padding-left: 20px;
+}
+
+details li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.project-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
